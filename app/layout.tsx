@@ -1,6 +1,7 @@
 import type {Metadata} from "next";
 
 import {Inter as FontSans} from "next/font/google";
+import {UserProvider} from "@auth0/nextjs-auth0/client";
 
 import "./globals.css";
 import {cn} from "@/lib/utils";
@@ -23,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={cn("min-h-screen bg-background font-sans antialiased", fontSans.variable)}>
-        {children}
+        <UserProvider>{children}</UserProvider>
       </body>
     </html>
   );
