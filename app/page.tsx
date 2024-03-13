@@ -14,6 +14,9 @@ export default function Home() {
       <Button asChild variant={"outline"}>
         <Link href="/protected-route">Protected route</Link>
       </Button>
+      <Button asChild variant={"secondary"}>
+        <Link href="/ssr-protected">User</Link>
+      </Button>
     </main>
   );
 }
