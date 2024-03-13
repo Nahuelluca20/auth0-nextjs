@@ -17,6 +17,9 @@ export default function Home() {
       <Button asChild variant={"ghost"}>
         <Link href="/ssr-protected">ssr-protected</Link>
       </Button>
+      <Button asChild variant={"link"}>
+        <Link href="/route-api">route-api</Link>
+      </Button>
     </main>
   );
 }
